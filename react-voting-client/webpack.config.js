@@ -1,12 +1,12 @@
-var webpack = require('webpack')
+var webpack = require('webpack');
 
 module.exports = {
   entry: [
-    'webpack-dev-server/client?http://locahost:8080',
+    'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
-    './src/index.js'
+    './src/index.jsx'
   ],
-  module: {
+a  module: {
     loaders: [{
       test: /\.jsx?$/,
       exclude: /node_modules/,
@@ -28,4 +28,4 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin()
   ]
-}
+};
