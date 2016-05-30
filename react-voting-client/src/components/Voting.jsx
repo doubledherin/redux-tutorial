@@ -10,4 +10,4 @@ export default React.createClass({
         <Vote {...this.props} />}
     </div>
   }
-});
+})
