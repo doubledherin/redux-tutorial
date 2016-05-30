@@ -61,10 +61,10 @@ describe('reducer', () => {
       }
     }))
   })
-  it('handles VOTE action by setting hasVoted', () {
+  it('handles VOTE action by setting hasVoted', () => {
     const state = fromJS({
       vote: {
-        pair: ['Trainspotting', '28 Days Later']
+        pair: ['Trainspotting', '28 Days Later'],
         tally: {Trainspotting: 1}
       }
     })
